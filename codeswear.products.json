@@ -1,0 +1,504 @@
+[{
+  "_id": {
+    "$oid": "64ef354ee53d823e473de2d6"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-premium",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XL",
+  "color": "red",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-30T12:25:50.316Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T05:07:39.025Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ef3b33e53d823e473de2db"
+  },
+  "title": "wear the code simple",
+  "slug": "wear-the-code-simple",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/71V4RsIUADL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XXL",
+  "color": "yellow",
+  "price": 499,
+  "availableQty": 0,
+  "createdAt": {
+    "$date": "2023-08-30T12:50:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T05:39:48.624Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ef3b33e53d823e473de2dd"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/71eUwDk8z+L._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XXL",
+  "color": "red",
+  "price": 499,
+  "availableQty": 0,
+  "createdAt": {
+    "$date": "2023-08-30T12:50:59.475Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T05:10:37.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f025a46be9d66bd7db1d35"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-2",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "M",
+  "color": "red",
+  "price": 499,
+  "availableQty": 0,
+  "createdAt": {
+    "$date": "2023-08-31T05:31:16.314Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T05:15:13.321Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f025a46be9d66bd7db1d38"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-S",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "S",
+  "color": "red",
+  "price": 499,
+  "availableQty": 0,
+  "createdAt": {
+    "$date": "2023-08-31T05:31:16.326Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T05:51:59.300Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f025ec6be9d66bd7db1d3d"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-green",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "M",
+  "color": "green",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T05:32:28.837Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T05:32:28.837Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f025ec6be9d66bd7db1d3f"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-yellow",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "S",
+  "color": "yellow",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T05:32:28.845Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T05:32:28.845Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f0265d6be9d66bd7db1d4d"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-purple",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XL",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T05:34:21.286Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T05:34:21.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f0265d6be9d66bd7db1d4f"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-black",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XL",
+  "color": "black",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T05:34:21.291Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T05:34:21.291Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f031a36be9d66bd7db1d68"
+  },
+  "title": "wear the code",
+  "slug": "wear-the code-blue",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XXL",
+  "color": "blue",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T06:22:27.016Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T06:22:27.016Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f09e85ddd5b4cf83a18a05"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-XL",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XL",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T14:07:01.536Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T14:07:01.536Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f09e99ddd5b4cf83a18a08"
+  },
+  "title": "wear the code",
+  "slug": "wear-the-code-XXL",
+  "desc": "description",
+  "img": "https://m.media-amazon.com/images/I/713n+TxyfCL._AC_UL600_FMwebp_QL65_.jpg",
+  "category": "tshirts",
+  "size": "XXL",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 1,
+  "createdAt": {
+    "$date": "2023-08-31T14:07:21.143Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-31T14:07:21.143Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f167406921690aa17cfbf1"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-l-green",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "L",
+  "color": "green",
+  "price": 499,
+  "availableQty": 0,
+  "createdAt": {
+    "$date": "2023-09-01T04:23:28.995Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T06:45:21.810Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16a0d6921690aa17cfbf6"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-xl-red",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "XL",
+  "color": "red",
+  "price": 499,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:35:25.796Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:35:25.796Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16a6b6921690aa17cfbfb"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-xl-green",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "XL",
+  "color": "green",
+  "price": 499,
+  "availableQty": 9,
+  "createdAt": {
+    "$date": "2023-09-01T04:36:59.753Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T07:08:14.811Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16a7a6921690aa17cfbfd"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-xl-yellow",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "XL",
+  "color": "yellow",
+  "price": 499,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:37:14.460Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:37:14.460Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16a886921690aa17cfbff"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-xl-purple",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "XL",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 9,
+  "createdAt": {
+    "$date": "2023-09-01T04:37:28.893Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-10T07:13:57.709Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16a986921690aa17cfc01"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-xxl-purple",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "XXL",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:37:44.880Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:37:44.880Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16aa76921690aa17cfc03"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-M-purple",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "M",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:37:59.300Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:37:59.300Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16ab36921690aa17cfc05"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-S-purple",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "S",
+  "color": "purple",
+  "price": 499,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:38:11.701Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:38:11.701Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16adf6921690aa17cfc08"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-S-black",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "S",
+  "color": "black",
+  "price": 499,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:38:55.616Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:38:55.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f16e336921690aa17cfc25"
+  },
+  "title": "wear the code Premium Hood",
+  "slug": "wear-the-codehood-S-yellow",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51W0YDiJobL._UX679_.jpg",
+  "category": "hoodies",
+  "size": "S",
+  "color": "yellow",
+  "price": 599,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T04:53:07.496Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T04:53:07.496Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f1713c6921690aa17cfc32"
+  },
+  "title": "wear the code Premium Stickers",
+  "slug": "wear-the-codestickers-S-yellow",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/51AzhqUQ9iL.jpg",
+  "category": "stickers",
+  "size": "S",
+  "color": "yellow",
+  "price": 299,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T05:06:04.870Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T05:06:04.870Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f171a56921690aa17cfc39"
+  },
+  "title": "wear the code Premium Mugs",
+  "slug": "wear-the-codemugs-S-yellow",
+  "desc": "This is very nice hood. Please buy it",
+  "img": "https://m.media-amazon.com/images/I/71SYddM7KmL._SL1500_.jpg",
+  "category": "mugs",
+  "size": "S",
+  "color": "yellow",
+  "price": 299,
+  "availableQty": 10,
+  "createdAt": {
+    "$date": "2023-09-01T05:07:49.772Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T05:07:49.772Z"
+  },
+  "__v": 0
+}]
