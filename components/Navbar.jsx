@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import '../pages/globals.css'
+
 
 import { AiOutlineShoppingCart, AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
 import { BsFillBagCheckFill } from 'react-icons/bs'
