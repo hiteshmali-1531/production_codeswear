@@ -2,11 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { AiFillMinusCircle, AiFillPlusCircle } from 'react-icons/ai'
 import Head from 'next/head'
+
 // import Script from 'next/script'
 // import axios from 'axios';
 import { Router, useRouter } from 'next/router'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Script from 'next/script'
+import { useSearchParams } from 'next/navigation'
 // import Product from '../models/Product'
 // import jwt from 'jsonwebtoken'
 
@@ -22,8 +25,9 @@ function Checkout({ cart, addToCart, removeFromCart, clearCart, subTotal }) {
     const [state, setState] = useState("");
     const [token, setToken] = useState("");
     const[cartItem, setCartItem] = useState();
+    const params = useSearchParams();
     // console.log(data);
-
+    
   
     const fetchData = async (token) => {
         console.log(cartItem);
@@ -45,6 +49,21 @@ function Checkout({ cart, addToCart, removeFromCart, clearCart, subTotal }) {
         setEmail(json.data.email);
     }
     useEffect(() => {
+        // console.log(params.get("paymentdone"));
+        if(params.get("paymentdone") == "true"){
+            toast.success('your payment done successfully 👍!', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light"
+                
+            });
+            router.push(`/checkout`);
+        }
         let tokens = localStorage.getItem("token");
         setCartItem(localStorage.getItem("cart"));
         setToken(tokens);
@@ -62,12 +81,12 @@ function Checkout({ cart, addToCart, removeFromCart, clearCart, subTotal }) {
     const initiatePayment = async () => {
         // let txnToken;
 
-        let oid = Math.floor(Math.random() * Date.now());
+       
 
         //Get a transaction token 
         const data = {
             cart,
-            subTotal, oid, email,
+            subTotal, email,
             address, pincode, phone, token, pincode
         }
         let a = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/pretransaction`, {
@@ -77,73 +96,39 @@ function Checkout({ cart, addToCart, removeFromCart, clearCart, subTotal }) {
             },
             body: JSON.stringify(data)
         })
+        a = await a.json();
+        let orderId = a.x.id;
+        // console.log(orderId)
+        // console.log(a)
 
-        let txnRes = await a.json();
-        console.log(txnRes)
-        console.log(txnRes.response)
-        if (txnRes.success) {
-            // await Product.findOne()
-            let res= await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/posttransaction`,{
-                method: 'POST',
-                headers:{
-                    'Content-Type': 'application/json'
-                }
-                ,
-                body: JSON.stringify({txnRes: txnRes})
-            })
-            res = await res.json();
 
-            // console.log(res);
-            // clearCart();
-            router.push(`/order?id=${txnRes.response._id}&clearcart=1`);
-        }else{
-          
-            // clearCart();
-            toast.error(`${txnRes.errore}`, {
-                position: "top-left",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-                });
+        var option = {
+            "key": process.env.NEXT_PUBLIC_RAZO_ID, // Enter the Key ID generated from the Dashboard
+            "amount": subTotal*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": email, //your business name
+            "description": "hello",
+            "image": "https://example.com/your_logo",
+            "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "callback_url": `${process.env.NEXT_PUBLIC_HOST}/api/razorpay`,
+            "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+                "name": "hitesh Kumar", //your customer's name
+                "email": "hitesh@gmail.com",
+                "contact": "9000090000" //Provide the customer's phone numb er for better conversion rates 
+            },
+
         }
 
+        var rzp1 = new Razorpay(option);
+
+        console.log(rzp1.accounts)
+        rzp1.open();
+        
 
 
 
-        //
 
-
-        // txnToken = txnRes.txnToken;
-        // var config = {
-        //     "root": "",
-        //     "flow": "DEFAULT",
-        //     "data": {
-        //         "orderId": oid, /* update order id */
-        //         "token": txnToken, /* update token value */
-        //         "tokenType": "TXN_TOKEN",
-        //         "amount": subTotal /* update amount */
-        //     },
-        //     "handler": {
-        //         "notifyMerchant": function (eventName, data) {
-        //             console.log("notifyMerchant handler function called");
-        //             console.log("eventName => ", eventName);
-        //             console.log("data => ", data);
-        //         }
-        //     }
-        // };
-
-
-        // initialze configuration using init method
-        // window.Paytm.CheckoutJS.init(config).then(function onSuccess() {
-        //     // after successfully updating configuration, invoke JS Checkout
-        //     window.Paytm.CheckoutJS.invoke();
-        // }).catch(function onError(error) {
-        //     console.log("error => ", error);
-        // });
+     
 
 
     }
@@ -204,6 +189,8 @@ function Checkout({ cart, addToCart, removeFromCart, clearCart, subTotal }) {
     // }
     return (
         <div className="container w-[90vw] m-auto">
+        
+            <Script id="razor" src="https://checkout.razorpay.com/v1/checkout.js"></Script>
             <Head>
                 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
             </Head>

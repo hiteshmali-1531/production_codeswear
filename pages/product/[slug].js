@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import mongoose from 'mongoose';
 import Product from '../../models/Product';
@@ -56,11 +56,18 @@ function Slug({addToCart, product, variants, clearCart, buyNow}) {
   }
 
    const [color, setColor] = useState(product.color);
-   const [size, sizeColor] = useState(product.size);
+   const [size, setSize] = useState(product.size);
+
+   useEffect(()=>{
+    console.log("hii")
+    router.push(`http://localhost:3000/product/${variants[color][size]['slug']}`);
+   },[color, size])
   // console.log(color);
    const refreshVariant = (newSize, newColor) =>{
-    let url = `http://localhost:3000/product/${variants[newColor][newSize]['slug']}`
-    window.location = url;
+    setColor(newColor);
+    setSize(newSize)
+    // let url = `http://localhost:3000/product/${variants[newColor][newSize]['slug']}`
+    // window.location = url;
    }
 
    

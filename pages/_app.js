@@ -55,14 +55,20 @@ export default function MyApp({ Component, pageProps, example }) {
   }
 
   const buyNow = (itemCode, qty, price , name, size, variant) =>{
-    let newCart =  {slug: {qty: 1, price, name, size, variant}};
-    newCart = {};
+    setCart({})
+
+    saveCart({})
+    let myCart = {};
     
-    saveCart({});
     
-    setCart(newCart);
+      myCart[itemCode] = {qty:1, price, name, size, variant, itemCode};
+
+    
+    setCart(myCart);
+    saveCart(myCart);
+    
     // console.log(newCart);
-    saveCart(newCart);
+  
 
     router.push('/checkout');
    }
